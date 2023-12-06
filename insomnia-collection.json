@@ -1,0 +1,433 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-12-06T08:24:24.213Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_342fbc93c7e742e09b4b1921df82c03b",
+      "parentId": "fld_21dcd9e377914ffe86dc2c2969e826a8",
+      "modified": 1701670468889,
+      "created": 1701645099171,
+      "url": "http://localhost:3333/auth/signup",
+      "name": "signup",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/x-www-form-urlencoded",
+        "params": [
+          {
+            "id": "pair_55581fed0f6d42438af95b439085faa2",
+            "name": "email",
+            "value": "lucas@mail.com",
+            "description": ""
+          },
+          {
+            "id": "pair_ef9ac1e96ef64191997f629b3d47adf2",
+            "name": "password",
+            "value": "password",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701645099172,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_21dcd9e377914ffe86dc2c2969e826a8",
+      "parentId": "wrk_30495540e5de4432babb60a0233ba9bd",
+      "modified": 1701850960022,
+      "created": 1701645095502,
+      "name": "Auth",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1701850549158,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_30495540e5de4432babb60a0233ba9bd",
+      "parentId": null,
+      "modified": 1701644979465,
+      "created": 1701644979465,
+      "name": "nestjs-prisma-api",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_700b3c3024464072b30756d02cabc251",
+      "parentId": "fld_21dcd9e377914ffe86dc2c2969e826a8",
+      "modified": 1701672093235,
+      "created": 1701645235549,
+      "url": "http://localhost:3333/auth/signin",
+      "name": "signin",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/x-www-form-urlencoded",
+        "params": [
+          {
+            "id": "pair_d453d557460c4778a7c0361034e9df1b",
+            "name": "email",
+            "value": "lucas@mail.com",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "id": "pair_ca8b936a234649939cb4d7db46669911",
+            "name": "password",
+            "value": "password",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701645099122,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5c45537b88be4c4cab8185db1f90e00e",
+      "parentId": "fld_09d61995c5c94c759944e804fe284df7",
+      "modified": 1701850937325,
+      "created": 1701751471597,
+      "url": "http://localhost:3333/users/me",
+      "name": "me",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_2268e471568d40f9b7131c7d4f94f2b6"
+        },
+        {
+          "id": "pair_90846a9c854941c7adff8121d21bb444",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ZDE1ODRhNC05NWJiLTQwZDAtYTMzNS0yNmJlNTNhNWNmYjAiLCJlbWFpbCI6Imx1Y2FzQG1haWwuY29tIiwiaWF0IjoxNzAxODUwNDg4LCJleHAiOjE3MDE4NTEzODh9.dk-PD_KZ1tFN7cYrr0BW3oikJZW0kQgnH2Px3y_scG4",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701850393076,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_09d61995c5c94c759944e804fe284df7",
+      "parentId": "wrk_30495540e5de4432babb60a0233ba9bd",
+      "modified": 1701850962859,
+      "created": 1701751467547,
+      "name": "users",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1701850549108,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_6c1f822f59674edbbef4958473037339",
+      "parentId": "fld_09d61995c5c94c759944e804fe284df7",
+      "modified": 1701850945705,
+      "created": 1701850392976,
+      "url": "http://localhost:3333/users",
+      "name": "edit user",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"firstName\": \"Lucas\",\n\t\"lastName\": \"Salazar\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_8c92fb41fda24121b2db493aafc02c59"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_425b12e87eda4e50a68664ec863b016f"
+        },
+        {
+          "id": "pair_7ff0b6788bb84d8096156deb669a8a85",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ZDE1ODRhNC05NWJiLTQwZDAtYTMzNS0yNmJlNTNhNWNmYjAiLCJlbWFpbCI6Imx1Y2FzQG1haWwuY29tIiwiaWF0IjoxNzAxODUwNDg4LCJleHAiOjE3MDE4NTEzODh9.dk-PD_KZ1tFN7cYrr0BW3oikJZW0kQgnH2Px3y_scG4",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701850392976,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5a398742458749a09925d3dc890deb43",
+      "parentId": "fld_67d6c8ff29e143108020f04230f697d1",
+      "modified": 1701850716944,
+      "created": 1701850671752,
+      "url": "http://localhost:3333/bookmarks",
+      "name": "create bookmark",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Lucas's Site\",\n\t\"link\": \"https://lucassalazar.xyz\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_b85ba99d38af49388224c8bc75f1c5b9"
+        },
+        {
+          "id": "pair_9075f1af3f42481ca82992d2a9793f4c",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ZDE1ODRhNC05NWJiLTQwZDAtYTMzNS0yNmJlNTNhNWNmYjAiLCJlbWFpbCI6Imx1Y2FzQG1haWwuY29tIiwiaWF0IjoxNzAxODUwNDg4LCJleHAiOjE3MDE4NTEzODh9.dk-PD_KZ1tFN7cYrr0BW3oikJZW0kQgnH2Px3y_scG4",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701850556069,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_67d6c8ff29e143108020f04230f697d1",
+      "parentId": "wrk_30495540e5de4432babb60a0233ba9bd",
+      "modified": 1701850549058,
+      "created": 1701850549058,
+      "name": "bookmarks",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1701850549058,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_99dc3d9277a94f0395b3cb5a02629207",
+      "parentId": "fld_67d6c8ff29e143108020f04230f697d1",
+      "modified": 1701850894460,
+      "created": 1701850555969,
+      "url": "http://localhost:3333/bookmarks",
+      "name": "get bookmarks",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_b85ba99d38af49388224c8bc75f1c5b9"
+        },
+        {
+          "id": "pair_9075f1af3f42481ca82992d2a9793f4c",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ZDE1ODRhNC05NWJiLTQwZDAtYTMzNS0yNmJlNTNhNWNmYjAiLCJlbWFpbCI6Imx1Y2FzQG1haWwuY29tIiwiaWF0IjoxNzAxODUwNDg4LCJleHAiOjE3MDE4NTEzODh9.dk-PD_KZ1tFN7cYrr0BW3oikJZW0kQgnH2Px3y_scG4",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701850555969,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_977f6cea736f4cbb9042d40cc1f24997",
+      "parentId": "fld_67d6c8ff29e143108020f04230f697d1",
+      "modified": 1701850902353,
+      "created": 1701850630576,
+      "url": "http://localhost:3333/bookmarks/1",
+      "name": "get bookmark by id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_b85ba99d38af49388224c8bc75f1c5b9"
+        },
+        {
+          "id": "pair_9075f1af3f42481ca82992d2a9793f4c",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ZDE1ODRhNC05NWJiLTQwZDAtYTMzNS0yNmJlNTNhNWNmYjAiLCJlbWFpbCI6Imx1Y2FzQG1haWwuY29tIiwiaWF0IjoxNzAxODUwNDg4LCJleHAiOjE3MDE4NTEzODh9.dk-PD_KZ1tFN7cYrr0BW3oikJZW0kQgnH2Px3y_scG4",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701850474522.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3167aaf66eba41ebb2d3102a3f04a029",
+      "parentId": "fld_67d6c8ff29e143108020f04230f697d1",
+      "modified": 1701850914829,
+      "created": 1701850745711,
+      "url": "http://localhost:3333/bookmarks/2",
+      "name": "edit bookmark by id",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"description\": \"I am excited to kick off this humble corner of the internet, where I'll share my thoughts and insights on software development, with a special focus on JavaScript, TypeScript, and web technologies.\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_bdda4ae9a848406f98a15c48ddcc2064"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_b85ba99d38af49388224c8bc75f1c5b9"
+        },
+        {
+          "id": "pair_9075f1af3f42481ca82992d2a9793f4c",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ZDE1ODRhNC05NWJiLTQwZDAtYTMzNS0yNmJlNTNhNWNmYjAiLCJlbWFpbCI6Imx1Y2FzQG1haWwuY29tIiwiaWF0IjoxNzAxODUwNDg4LCJleHAiOjE3MDE4NTEzODh9.dk-PD_KZ1tFN7cYrr0BW3oikJZW0kQgnH2Px3y_scG4",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701850474422.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7decc317a3e94e5f830c5b671b84abe0",
+      "parentId": "fld_67d6c8ff29e143108020f04230f697d1",
+      "modified": 1701850924129,
+      "created": 1701850824108,
+      "url": "http://localhost:3333/bookmarks/3",
+      "name": "delete bookmark by id",
+      "description": "",
+      "method": "DELETE",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8",
+          "id": "pair_b85ba99d38af49388224c8bc75f1c5b9"
+        },
+        {
+          "id": "pair_9075f1af3f42481ca82992d2a9793f4c",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ZDE1ODRhNC05NWJiLTQwZDAtYTMzNS0yNmJlNTNhNWNmYjAiLCJlbWFpbCI6Imx1Y2FzQG1haWwuY29tIiwiaWF0IjoxNzAxODUwNDg4LCJleHAiOjE3MDE4NTEzODh9.dk-PD_KZ1tFN7cYrr0BW3oikJZW0kQgnH2Px3y_scG4",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1701850433749.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_11b6fac6514a114fc19bd335317cda7d5cdfe9e6",
+      "parentId": "wrk_30495540e5de4432babb60a0233ba9bd",
+      "modified": 1701644979469,
+      "created": 1701644979469,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1701644979469,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_11b6fac6514a114fc19bd335317cda7d5cdfe9e6",
+      "parentId": "wrk_30495540e5de4432babb60a0233ba9bd",
+      "modified": 1701644979471,
+      "created": 1701644979471,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
