@@ -25,8 +25,8 @@ A Bookmarks REST API implementation built with:
 3. Install dependencies `npm install`
 4. Restart docker dev-db and run migrations `npm run db:dev:restart`
 5. Start dev server `npm run start:dev`
-6. Restart docker test-db, run migrations and run e2e testing `npm run test:e2e`
-7. Restart docker test-db, run migrations and run integration testing `npm run test:e2e`
+6. Restart docker test-db, run migrations and run integration testing `npm run test:int`
+7. Restart docker test-db, run migrations and run e2e testing `npm run test:e2e`
 
 ## API endpoints
 
